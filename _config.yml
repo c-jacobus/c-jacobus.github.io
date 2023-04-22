@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 mastodon:
-  username               : "fosstodon.org/@jayrobw"
+  username               : 
 twitter:
   username               : 
 facebook:
@@ -119,7 +119,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : 
+  youtube          : "cooperjacobus3633"
   wikipedia        :
 
 
