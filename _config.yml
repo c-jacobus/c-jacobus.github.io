@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Cooper Jacobus"
 title_separator          : "-"
-name                     : &name "Cooper Jacobus"
+name                     : &name "Cooper H Jacobus"
 description              : &description "Student Researcher in Cosmology and Machine Intelligence"
 url                      : https://c-jacobus.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
