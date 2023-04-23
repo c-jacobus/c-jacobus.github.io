@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Cooper Jacobus"
 title_separator          : "-"
 name                     : &name "Cooper H Jacobus"
-description              : &description "Student Researcher in Cosmology and Machine Intelligence"
+description              : &description "Student Researcher in Physical Cosmology and Machine Intelligence"
 url                      : https://c-jacobus.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "c-jacobus/c-jacobus.github.io"
@@ -119,7 +119,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : "cooperjacobus3633"
+  youtube          : "@cooperjacobus3633"
   wikipedia        :
 
 
