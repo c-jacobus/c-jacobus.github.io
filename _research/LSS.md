@@ -17,6 +17,13 @@ header:
 
 What follows is a visual guide for anyone curious about the Large Scale Structure of the Cosmos, what we can learn by mapping it, and how we can simulate its formation on a computer.
 
+The Large Scale Structure (LSS) of the universe is a fascinating subject of study for astrophysicists and cosmologists. It refers to the distribution of galaxies and matter on a larger scale than individual galaxies or galaxy groups, with patterns extending up to billions of light years. These structures are formed and shaped by gravity, which pulls galaxies and matter together to create rich and complex patterns, resembling a cosmic web. Studying LSS provides astronomers with important insights into the formation and evolution of the universe as a whole.
+
+Studying LSS allows cosmologists to measure the strength of gravity in the universe, as they can measure galaxies at different distances and times in the universe's history, revealing that gravity has been attracting more matter together over time. Furthermore, LSS provides information about dark energy, the mysterious pressure driving the expansion of the universe, which is known to slow down the process of gravity creating large structures. As the universe accelerates in its expansion, matter takes more time to come together due to the increased distance. By studying the growth of LSS over time, astronomers can gain knowledge about how the relative strengths of gravity and dark energy may themselves be changing as the universe evolves. 
+
+In this article, we will explore the methods used to map the composition of the nearby universe and the techniques used to simulate the formation of the large scale structure of the cosmos as a whole. 
+
+
 # Section 1: Cosmic Cartography
 
 ![Sloan Digital Sky Survey](/images/research/SDSS.svg)
