@@ -54,13 +54,16 @@ What follows is a visual guide for anyone curious about the Large Scale Structur
 <p align="center"><video width="640" height="480" autoplay loop muted>
   <source src="/images/research/NBody.mp4" type="video/mp4">
 </video></p>
-
 **Video 1:** Simulation of self-gravitating dark matter particles forming structure. 
 
 ![Expand](/images/research/Expand.svg)
 **Figure 6:** Dark matter structure can be simulated using an N-Body simulation in an expanding spacetime. Many particles gravitationally attract eachother while the frame they inhabit is slowly stretched out.
 
 <p align="center"><iframe src="https://openprocessing.org/sketch/1900476/embed/?plusEmbedHash=NGUxNzEzNTI3NDhkZTRhOTUyZmRhNzQ0ZDhlYzFmYjFmZGE4N2Y1MDc4ZTUzZTAzYmE5OGM1OTUzM2ZhODgwZDFmZDAzNTg3Nzg2NDdkZTE3YzZhOWVlYjlmYjQ5NDA4ZTQwOGIzZDliYmZkOGMwMDk3YThhYjcxNDQ1YWQwNGJXcy8zc0pkeUxVMWFvTUNkeEdYTGxnS2FUanh6STU2aFhJU3ZhZE5JSFBkN3pIYUZuNzlHY0p2WURPZUtzODlQdUsrcEFzMzNTM2VuVnpidVhJRUMxZz09" width="620" height="640"></iframe></p>
+**Appliction 1:** Self-gravitating dark matter particles in an expanding spacetime. 
+
+![Evolve](/images/research/Evolution.png)
+**Figure 6:** Simulation of gravity in an expanding Universe. As time goes on (left to right) the universe itself is expanding so any given box within the universe gets bigger. In reality this effect is *much* more exaggerated. Adapted from an figure by the National Center for Supercomputer Applications (NCSA).
 
 ### Initial Conditions
 
@@ -83,9 +86,9 @@ What follows is a visual guide for anyone curious about the Large Scale Structur
 **Figure 9:** Density Diffusion and Fluid Viscosity on an Eulerian Grid are modeled similarly by diffusing a each field slightly each timestep using convolution with some discrete gaussian kernel.
 
 <p align="center"><iframe src="https://openprocessing.org/sketch/1052845/embed/?plusEmbedHash=YmEzYTllYTJjMDI0MmM1NmM3YThkNWM5NWVmZGVhYjcyZjUyMzI3MTdjZTliMTAwZDFiNTY0MWQyNTM2NjdjY2ViMmMyMGRmMmFhNWI5Yjk4MTM5NjY4NzMxNjJlZGNlZWU4MWUxOWY5YjY3YTAzYmFkMTgzMmNjNTAxMWU5ZTlhYWJscXNmZk1Vd2ZoUTVQV1BJWFlubmMrR0Q4dGtsUzVISW90MTBQTFBKalg4YUI1K29qYW1mN2ZNblp6cGF1c0FqVkphYXNuTTZkVVlWK2RaSUtOZz09" width="620" height="640"></iframe></p>
-**Appliction 1:** Combining the above concepts yields a visually striking fluid model. Click and drag to induce flow.
+**Appliction 2:** Combining the above concepts yields a visually striking fluid model. Click and drag to induce flow.
 
 
 <p align="center"><iframe src="https://openprocessing.org/sketch/1052684/embed/?plusEmbedHash=YTE5OWVlOTRmZWUxMzk2ZjAzYjFjNzQ0NmNjOGY1YmQ2ODliYzU5N2U0NTkxMjZkZDQ2Y2U4YmYyNWExODVjOTRlODcwMDBiYWI4NGI1NGExM2MwMjFkMDdlM2FkYzBhNjI1MTk2ZGRkMDIyMzVkYjlmNjgxNWQ1OTU0ZmUzZTRiWUt4ZVo3ak9Zai9vWXl3YlJmYlljU1RPbm9nUHppYXROd2hBVCtkdWNWUjJzai9hT1kvYkorVEhNVHFvb0pYcmQvVy93d3htYkFtc0NPTGk5dmJkdz09" width="620" height="640"></iframe></p>
-**Appliction 2:** Increasing the grid's cell density improves the fluid's realism. Click and drag to induce flow.
+**Appliction 3:** Increasing the grid's cell density improves the fluid's realism. Click and drag to induce flow.
 
