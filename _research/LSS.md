@@ -49,6 +49,9 @@ What follows is a visual guide for anyone curious about the Large Scale Structur
 ![CMB](/images/research/CMB_PS.svg)
 **Figure 7:** Observations of the CMB provide constraints on the initial conditions of the overdensity fluctuations as modeled by a guassian random field.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4IIEJlSwuXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+**Video 2:** Evolution of cosmic structure including baryon hydrodynamics. View is 10 Mpc wide, taken from the [TNG100 simulation](https://www.tng-project.org/).
+
 ![Advect](/images/research/Advection.png)
 **Figure 8:** Fluid transport (ie. Advection) on an Eulerian Grid is done by distributing the density in given cell to the cells nearest the tip of the velocity vector extending from the start cell.
 
