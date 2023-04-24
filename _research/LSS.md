@@ -8,6 +8,9 @@ header:
   og_image: "research/LSS_icon.png"
 ---
 
+![Sloan Digital Sky Survey](/images/research/LSS.png)
+**Figure 0:** Filamentary structures of intergalactic gass spaning tens of Megaparsecs, produced by the [Nyx Simulation Suite](https://amrex-astro.github.io/Nyx/).
+
 
 ![Sloan Digital Sky Survey](/images/research/SDSS.svg)
 **Figure 1:** A 3D map of galaxies in the local universe (z<0.15), reconstructed using galaxy spectra by the [Sloan Digital Sky Survey](https://classic.sdss.org/).
