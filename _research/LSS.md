@@ -53,6 +53,12 @@ What follows is a visual guide for anyone curious about the Large Scale Structur
 ![NBody](/images/research/NBody.mp4)
 **Video 1:** Simulation of self-gravitating dark matter particles forming structure. 
 
+<video width="320" height="240" autoplay muted>
+  <source src="/images/research/NBody.mp4" type="video/mp4">
+</video>
+
+**Video 1:** Simulation of self-gravitating dark matter particles forming structure. 
+
 ![Expand](/images/research/Expand.svg)
 **Figure 6:** Dark matter structure can be simulated using an N-Body simulation in an expanding spacetime. Many particles gravitationally attract eachother while the frame they inhabit is slowly stretched out.
 
