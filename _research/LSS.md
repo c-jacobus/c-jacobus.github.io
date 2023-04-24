@@ -29,24 +29,42 @@ In this article, we will explore the methods used to map the composition of the 
 ![Sloan Digital Sky Survey](/images/research/SDSS.svg)
 **Figure 1:** A 3D map of galaxies in the local universe (z<0.15), reconstructed using galaxy spectra by the [Sloan Digital Sky Survey](https://classic.sdss.org/).
 
+The simplest way to see this cosmic structure for real is to make a map of the local universe. Figure 1 shows a map of galaxies in the nearby universe up to a distance of about two billion light years away. Each point is a galaxy and the Milky Way (which contains Earth) is at the center. The web-like distribution of galaxies on large scales can be easily seen by eye. 
 
+As the universe expands, light traveling through the universe expands as well. As light expands, its wavelength gets longer and consequently looks redder. Galaxies at large redshifts are further away from Earth which means that the light from those galaxies has taken longer to reach our telescopes and thus has spent more time expanding and getting redder. Astronomers have precisely studied the colors of nearby galaxies so they can use this cosmological reddening information to estimate the distance to galaxies based on the color of light they observe.
+
+The variable z is used to quantify this “redshift”, it describes the scalar factor by which the wavelength has expanded by. For example a galaxy at redshift 0.15 is observed at a wavelength 15% longer than when it was emitted.
+
+Nearby galaxy maps like this are extremely useful for understanding the physics of our universe.
 
 ![Deep](/images/research/Deep_Survey.png)
 **Figure 2:** A deeper map of galaxies in the more distant universe (z<5), reconstructed using galaxy and quasar spectra by the [Sloan Digital Sky Survey](https://classic.sdss.org/), adapted from a figure made by [mapoftheuniverse.net](https://mapoftheuniverse.net/) showing the cosmic microwave background in the distance.
 
+Two billion lightyears may sound like a lot (and it is!), but the universe is much bigger. As we look further away and further back in time, it becomes more and more difficult to find visible galaxies. As you can see in figure 2, the density of observable galaxies falls off for distances further than z=5 (ie. 500% redder)  To map the universe beyond here, astronomers will need to be creative. 
 
+It may be hard to see distant galaxies, but a handful of quasars are still visible. Quasars are supermassive black holes at the centers of galaxies. Unlike the dark supermassive black hole in the center of the Milky Way, quasars are some of the brightest objects in the universe. They consume infalling matter so fast that the disk of gas and plasma orbiting around them heats up and glows with the light of a trillion stars. Some of these extreme quasars are so powerful that they can shine 10 or even 100 times brighter than their host galaxies.
 
 ![Absorb](/images/research/Absorb.svg)
 **Figure 3:** Light from a distant quasar is absorbed by intergalactic gas clouds on its way to earth.
 
+Knowing the location of these quasars is interesting, but there are not enough of them to form a complete enough map. Fortunately, the light which reaches us from these distant quasars encodes a lot more information. 
 
+As this ancient quasar light travels through the universe, it frequently encounters clouds of intergalactic gas (like that shown in figure 0). As the light enters these gas clouds, certain wavelengths are absorbed and others pass through freely. 
 
 ![QSO](/images/research/QSO_Spectra.png)
 **Figure 4:** High resolution (FWHM ~ 6.6 km/s) spectrum of a quasar at z = 3.62, taken with the Keck High Resolution Echelle Spectrometer (HIRES). Data from [Womble et al (1996)](https://arxiv.org/pdf/astro-ph/9511035.pdf).
 
+The absorbed wavelengths of light are well known, they are associated with the energy transitions of the element hydrogen, which makes up the majority of these clouds. When the light from a quasar passes through one of these clouds, this wavelength is effectively subtracted from the quasars spectra. You might think of this like a piece of colored glass where if you shine light of all colors (ie. white light) through the glass, orange light might be absorbed but red, yellow, green, blue, purple light pass through the glass freely. 
+
+As the remaining light travels through space, the universe continues to expand and stretch the light with it. Every color/wavelength in the quasar’s spectra is stretched individually, so some light which passed through a cloud before may now be absorbed. This is like if the yellow light passes through a first piece of glass but is then stretched out to look orange (i.e. redder than yellow) and is then absorbed by a second piece of glass.
+
+So as the quasar light travels through the universe, the history of all the gas clouds it has encountered along the way is imprinted in the spectra. With nothing in the way, a quasar’s spectra should be relatively smooth, so astronomers can use the sections that appear to be missing to infer the location of the gas clouds it passed through. 
 
 ![Skewer](/images/research/Skewers.svg)
 **Figure 5:** Surveying many distant quasars and Lyman-break galaxies allows us to reconstuct an approximate map of the gas ocacity in the distant universe which we can use for statistical analysis.
+
+Modern telescopes can probe the ancient universe with unprecedented precision and depth. Specifically built facilities survey the sky year-round and have mapped millions of these distant quasars and captured their spectra. Using the combination of these spectra, we can construct a map of gas clouds in the distant universe. Figure 5 shows how a set of spectra from distant galaxies and quasars can be used to reconstruct a map of the shadow cast by these web-like gas clouds.
+
 
 # Section 2: Analysis Pipeline
 
