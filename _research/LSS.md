@@ -18,7 +18,7 @@ header:
 
 
 ![Deep](/images/research/Deep_Survey.png)
-**Figure 2:** A deeper map of galaxies in the nearby universe (z<5), reconstructed using galaxy and quasar spectra by the [Sloan Digital Sky Survey](https://classic.sdss.org/), adapted from a figure made by [mapoftheuniverse.net](https://mapoftheuniverse.net/) showing the cosmic microwave background in the distance.
+**Figure 2:** A deeper map of galaxies in the more distant universe (z<5), reconstructed using galaxy and quasar spectra by the [Sloan Digital Sky Survey](https://classic.sdss.org/), adapted from a figure made by [mapoftheuniverse.net](https://mapoftheuniverse.net/) showing the cosmic microwave background in the distance.
 
 
 
@@ -29,6 +29,10 @@ header:
 
 ![QSO](/images/research/QSO_Spectra.png)
 **Figure 4:** High resolution (FWHM ~ 6.6 km/s) spectrum of a quasar at z = 3.62, taken with the Keck High Resolution Echelle Spectrometer (HIRES). Data from [Womble et al (1996)](https://arxiv.org/pdf/astro-ph/9511035.pdf).
+
+
+![Skewer](/images/research/Skewers.svg)
+**Figure 5:** Surveying many distant quasars and Lyman-break galaxies allows us to reconstuct an approximate map of the gas ocacity in the distant universe which we can use for statistical analysis.
 
 
 
