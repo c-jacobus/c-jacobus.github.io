@@ -48,14 +48,12 @@ What follows is a visual guide for anyone curious about the Large Scale Structur
 
 # Section 3: Digital Universes
 
-## Dark Matter and Gravity Simulation
+### Dark Matter and Gravity Simulation
 
-![NBody](/images/research/NBody.mp4)
-**Video 1:** Simulation of self-gravitating dark matter particles forming structure. 
-
-<video width="320" height="240" autoplay muted>
+ 
+<p align="center"><video width="640" height="480" autoplay muted>
   <source src="/images/research/NBody.mp4" type="video/mp4">
-</video>
+</video></p>
 
 **Video 1:** Simulation of self-gravitating dark matter particles forming structure. 
 
@@ -64,13 +62,13 @@ What follows is a visual guide for anyone curious about the Large Scale Structur
 
 <p align="center"><iframe src="https://openprocessing.org/sketch/1900476/embed/?plusEmbedHash=NGUxNzEzNTI3NDhkZTRhOTUyZmRhNzQ0ZDhlYzFmYjFmZGE4N2Y1MDc4ZTUzZTAzYmE5OGM1OTUzM2ZhODgwZDFmZDAzNTg3Nzg2NDdkZTE3YzZhOWVlYjlmYjQ5NDA4ZTQwOGIzZDliYmZkOGMwMDk3YThhYjcxNDQ1YWQwNGJXcy8zc0pkeUxVMWFvTUNkeEdYTGxnS2FUanh6STU2aFhJU3ZhZE5JSFBkN3pIYUZuNzlHY0p2WURPZUtzODlQdUsrcEFzMzNTM2VuVnpidVhJRUMxZz09" width="620" height="640"></iframe></p>
 
-## Initial Conditions
+### Initial Conditions
 
 ![CMB](/images/research/CMB_PS.svg)
 **Figure 7:** Observations of the CMB provide constraints on the initial conditions of the overdensity fluctuations as modeled by a guassian random field.
 
 
-## Visible Matter and Fluid Simulation
+### Visible Matter and Fluid Simulation
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4IIEJlSwuXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
