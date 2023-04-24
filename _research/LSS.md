@@ -41,7 +41,7 @@ header:
 **Figure 6:** Dark matter structure can be simulated using an N-Body simulation in an expanding spacetime. Many particles gravitationally attract eachother while the frame they inhabit is slowly stretched out.
 
 ![CMB](/images/research/CMB_PS.svg)
-**Figure 7:** Observations of the CMB provide constraints on the initial conditions of the overdensity fluctuations as modelled by a guassian random field.
+**Figure 7:** Observations of the CMB provide constraints on the initial conditions of the overdensity fluctuations as modeled by a guassian random field.
 
 ![Advect](/images/research/Advection.png)
 **Figure 8:** Fluid transport (ie. Advection) on an Eulerian Grid is done by distributing the density in given cell to the cells nearest the tip of the velocity vector extending from the start cell.
