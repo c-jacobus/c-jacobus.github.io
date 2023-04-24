@@ -51,7 +51,7 @@ What follows is a visual guide for anyone curious about the Large Scale Structur
 ### Dark Matter and Gravity Simulation
 
  
-<p align="center"><video width="640" height="480" autoplay muted>
+<p align="center"><video width="640" height="480" autoplay loop muted>
   <source src="/images/research/NBody.mp4" type="video/mp4">
 </video></p>
 
