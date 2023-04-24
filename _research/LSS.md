@@ -9,7 +9,7 @@ header:
 ---
 
 ![Sloan Digital Sky Survey](/images/research/LSS.png)
-**Figure 0:** Filamentary structures of intergalactic gass spaning tens of Megaparsecs, produced by the [Nyx Simulation Suite](https://amrex-astro.github.io/Nyx/).
+**Figure 0:** Filamentary structures of intergalactic gas spaning tens of Megaparsecs, produced by the [Nyx Simulation Suite](https://amrex-astro.github.io/Nyx/).
 
 
 ![Sloan Digital Sky Survey](/images/research/SDSS.svg)
