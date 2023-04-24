@@ -8,10 +8,13 @@ header:
   og_image: "research/LSS_icon.png"
 ---
 
-What follows is a visual guide for anyone curious about the Large Scale Structure of the Cosmos, what we can learn by mapping it, and how we can simulate its formation on a computer.
+
 
 ![LSS](/images/research/LSS.png)
 **Figure 0:** Filamentary structures of intergalactic gas spanning tens of Megaparsecs, produced by the [Nyx Simulation Suite](https://amrex-astro.github.io/Nyx/).
+
+
+What follows is a visual guide for anyone curious about the Large Scale Structure of the Cosmos, what we can learn by mapping it, and how we can simulate its formation on a computer.
 
 
 ![Sloan Digital Sky Survey](/images/research/SDSS.svg)
@@ -42,6 +45,8 @@ What follows is a visual guide for anyone curious about the Large Scale Structur
 **Figure 5:** Data analysis pipeline for obtaining constraints on cosmological parameters from observations of cosmic structure.
 
 
+![NBody](/images/research/NBody.mp4)
+**Video 1:** Simulation of self-gravitating dark matter particles forming structure. 
 
 ![Expand](/images/research/Expand.svg)
 **Figure 6:** Dark matter structure can be simulated using an N-Body simulation in an expanding spacetime. Many particles gravitationally attract eachother while the frame they inhabit is slowly stretched out.
