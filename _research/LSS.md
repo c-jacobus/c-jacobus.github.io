@@ -8,7 +8,9 @@ header:
   og_image: "research/LSS_icon.png"
 ---
 
-![Sloan Digital Sky Survey](/images/research/LSS.png)
+What follows is a visual guide for anyone curious about the Large Scale Structure of the Cosmos, what we can learn by mapping it, and how we can simulate its formation on a computer.
+
+![LSS](/images/research/LSS.png)
 **Figure 0:** Filamentary structures of intergalactic gas spanning tens of Megaparsecs, produced by the [Nyx Simulation Suite](https://amrex-astro.github.io/Nyx/).
 
 
