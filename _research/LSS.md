@@ -129,23 +129,40 @@ Simulating this fluid behavior presents a unique challenge, so we will break dow
 
 Instead, the gas can be modeled using what’s called a cellular automata. Figure 0 shows a grid of density values where brighter regions are denser. If you are accustomed to thinking of gasses in terms of gas particles, you might think of this density field as encoding the average number of particles per unit volume inside each grid cell.
 
+Each grid cell has some variables associated with it representing the fluid’s average properties within it. For the purposes of these simulations, these properties are the gas density, temperature, and bulk velocity. The grid is updated iteratively to evolve the fluid forward in time. The values in a given grid grid cell at a given time are based on the values of it and its neighbors at the time just before. 
+
 ![Advect](/images/research/Advection.png)
 **Figure 8:** Fluid transport (ie. Advection) on an Eulerian Grid is done by distributing the density in given cell to the cells nearest the tip of the velocity vector extending from the start cell.
+
+The velocity of the fluid describes how the fluid should be moving, so the density at a given place ought to be *transported* according to the velocity there. This is called **Advection** and in practice it involves updating the density values of the neighboring cells additively based on the direction of flow and density of a given cell, as shown in Figure ?.
 
 ![Diffuse](/images/research/Diffusion.png)
 **Figure 9:** Density Diffusion and Fluid Viscosity on an Eulerian Grid are modeled similarly by diffusing a each field slightly each timestep using convolution with some discrete gaussian kernel.
 
+Any good fluid also has some diffusion - if you release gas in one corner of a room, it will eventually make its way to the other side of the room via random motion even without any wind. A good fluid simulation will also include viscosity, the friction that counteracts any shear flow and tends to make the velocity point in the same direction. 
+
+These two properties can actually be modeled very similarly. Density diffusion involves updating a local neighborhood of cells each timestep so that they all converge on the average of their neighbors. But viscosity can actually be modeled by doing the exact same process for the velocity vectors so they all align as time goes on. These processes are sketched in Figure ?.
+
+
+These two properties can actually be modeled very similarly. Density diffusion involves updating a local neighborhood of cells each timestep so that they all converge on the average of their neighbors. But viscosity can actually be modeled by doing the exact same process for the velocity vectors so they all align as time goes on. These processes are sketched in Figure ?.
+
+Combining these three processes alone (advection, diffusion, and viscosity) allows us to make a surprisingly realistic fluid model. The interactive application below uses these principles to animate a fluid flow model. You can click and drag with your mouse to make the fluid move. 
+
+
 <p align="center"><iframe src="https://openprocessing.org/sketch/1052845/embed/?plusEmbedHash=YmEzYTllYTJjMDI0MmM1NmM3YThkNWM5NWVmZGVhYjcyZjUyMzI3MTdjZTliMTAwZDFiNTY0MWQyNTM2NjdjY2ViMmMyMGRmMmFhNWI5Yjk4MTM5NjY4NzMxNjJlZGNlZWU4MWUxOWY5YjY3YTAzYmFkMTgzMmNjNTAxMWU5ZTlhYWJscXNmZk1Vd2ZoUTVQV1BJWFlubmMrR0Q4dGtsUzVISW90MTBQTFBKalg4YUI1K29qYW1mN2ZNblp6cGF1c0FqVkphYXNuTTZkVVlWK2RaSUtOZz09" width="620" height="640"></iframe></p>
 **Appliction 2:** Combining the above concepts yields a visually striking fluid model. Click and drag to induce flow.
 
+The fluid model above is a good proof of concept, but it is crude and inaccurate. We can improve the accuracy by just making the grid cells smaller. The cells in the application below are half as wide as in the one above. Since this means we need four times as many cells to fill the same amount of space and therefore four times as much computer memory to store each iteration of the fluid. The speed of the algorithm which advects the fluid depends on the number of cells it has to consider in a non-linear fashion. Having to consider four times as many cells means the computer takes eight times as long to update each frame. 
+
+In theory, we could keep shrinking the size of the cells until we had a perfect fluid. But in practice this becomes increasingly expensive, so researchers settle for some small-enough grid with just enough resolution to capture the phenomena they care about. 
 
 <p align="center"><iframe src="https://openprocessing.org/sketch/1052684/embed/?plusEmbedHash=YTE5OWVlOTRmZWUxMzk2ZjAzYjFjNzQ0NmNjOGY1YmQ2ODliYzU5N2U0NTkxMjZkZDQ2Y2U4YmYyNWExODVjOTRlODcwMDBiYWI4NGI1NGExM2MwMjFkMDdlM2FkYzBhNjI1MTk2ZGRkMDIyMzVkYjlmNjgxNWQ1OTU0ZmUzZTRiWUt4ZVo3ak9Zai9vWXl3YlJmYlljU1RPbm9nUHppYXROd2hBVCtkdWNWUjJzai9hT1kvYkorVEhNVHFvb0pYcmQvVy93d3htYkFtc0NPTGk5dmJkdz09" width="620" height="640"></iframe></p>
 **Appliction 3:** Increasing the grid's cell density improves the fluid's realism. Click and drag to induce flow.
 
+### Initial Conditions
+
 ![Evolve](/images/research/Evolution.png)
 **Figure 6:** Simulation of gravity in an expanding Universe. As time goes on (left to right) the universe itself is expanding so any given box within the universe gets bigger. In reality this effect is *much* more exaggerated. Adapted from an figure by the National Center for Supercomputer Applications (NCSA).
-
-### Initial Conditions
 
 ![CMB](/images/research/CMB_PS.svg)
 **Figure 7:** Observations of the CMB provide constraints on the initial conditions of the overdensity fluctuations as modeled by a guassian random field.
