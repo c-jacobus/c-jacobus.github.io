@@ -68,8 +68,17 @@ Modern telescopes can probe the ancient universe with unprecedented precision an
 
 # Section 2: Analysis Pipeline
 
+These maps of the cosmos can be used to study the evolution and underlying physics of our universe. The current large-scale structure of the universe is shaped by the parameters of a given cosmological model, as well as initial conditions. By comparing accurate observed galaxy/cluster maps with high-fidelity simulated model universes we can thus constrain the parameters of our cosmological model, for example: the nature of dark matter and dark energy, the history of inflation and reionization in the early universe, and the mass of neutrino particles.
+
 ![Pipeline](/images/research/LSS_Pipeline.png)
 **Figure 5:** Data analysis pipeline for obtaining constraints on cosmological parameters from observations of cosmic structure.
+
+These constraints are found by comparing the statistics of the observed, real universe with a large set of simulated universes. Researchers can change physical properties of the universe when running simulations to see how varying parameters like the density of matter or the strength of dark energy affect the structures that emerge. Finding the parameters of the actual universe then becomes a matter of finding which of these simulated universes is most similar to what researchers observe in reality. 
+
+This is not a matter of getting a universe which *exactly* matches our own, where you could point out some recognisable feature like the Milky Way or Andro (or even yourself). Rather, it is an issue of getting the virtual universe to match the real one *statistically*. Certain measurable statistical properties of the universe depend on these underlying physical parameters .
+
+In practice, researchers do not need to get these parameters to exactly match the real universe either. With enough sample, simulated universes, researchers can extrapolate the true values based on the correlation between the statistics and the physical parameters. Even so, this analysis will require producing an astronomical number of these simulated universes. 
+
 
 # Section 3: Digital Universes
 
