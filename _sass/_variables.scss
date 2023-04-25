@@ -6,6 +6,10 @@
    Typography
    ========================================================================== */
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
+</style>
+
 $doc-font-size              : 16;
 
 /* paragraph indention */
@@ -14,6 +18,7 @@ $indent-var                 : 1.3em;
 
 /* system typefaces */
 $serif                      : Garamond, Times, Georgia,  "Calisto MT", serif;
+$spectral                   : 'Spectral', serif;
 $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
@@ -29,7 +34,7 @@ $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
 $global-font-family         : $sans-serif;
-$header-font-family         : $serif;
+$header-font-family         : $spectral;
 $caption-font-family        : $serif;
 
 /* type scale */
