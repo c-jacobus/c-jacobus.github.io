@@ -111,10 +111,23 @@ Modeling the universe using this N-Body approach reproduces the web-like filamen
 
 ### Visible Matter and Fluid Simulation
 
+There is over five times as much dark matter in the universe as ordinary matter, but (as its name suggests) astronomers have no way to see it. So while dark matter represents the overwhelming majority of the attractive drive behind structure formation, simulations of dark matter alone *do not* contain all of the information relevant to what can actually be seen. 
+
+To simulate the kinds of structure that *can* be observed by our telescopes, we must also simulate the ordinary (non-dark) matter. Unlike dark matter, ordinary matter is collisional (for instance, you cannot pass your hand through the table). This means that we have to add some new features to our simulation technique to capture the properties of ordinary matter. 
+
+The ordinary matter which inhabits the space between galaxies forms a gas. Much like the gasses you’re familiar with here on earth, this intergalactic has some pressure and temperature which affects how it moves. Such a gas will behave like a fluid (note there is a difference between ‘fluid’ and ‘liquid’), it flows much like wind and can even produce turbulence.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4IIEJlSwuXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 **Video 2:** Evolution of cosmic structure including baryon hydrodynamics. View is 10 Mpc wide, taken from the [TNG100 simulation](https://www.tng-project.org/).
 
+As shown in Video 2, this fluid-like behavior of gas produces a much more diverse and interesting structure than the dark matter-only filaments shown in Video 1. You can see the formation of turbulent, spiral clouds which will seed the formation of galaxies and eventually stars. But also between these newborn galaxies are nebulous tendrils of diffuse gas, these are the structures that can be seen with our telescopes. 
 
+Simulating this fluid behavior presents a unique challenge, so we will break down the key components of the common methods. In principle it would be possible to use a similar N-body scheme, only modifying the code such that these gas particles could collide and bounce off one another. However to accurately capture the pressure and density of such an N-Body gas, an enormous number of particles would be needed and it would be incredibly inefficient to run on any computer.
+
+![Euler](/images/research/Euler.png)
+**Figure 8:** The density of intergalactic gas modeled using a grid for the density and velocity fields.
+
+Instead, the gas can be modeled using what’s called a cellular automata. Figure 0 shows a grid of density values where brighter regions are denser. If you are accustomed to thinking of gasses in terms of gas particles, you might think of this density field as encoding the average number of particles per unit volume inside each grid cell.
 
 ![Advect](/images/research/Advection.png)
 **Figure 8:** Fluid transport (ie. Advection) on an Eulerian Grid is done by distributing the density in given cell to the cells nearest the tip of the velocity vector extending from the start cell.
