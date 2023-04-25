@@ -9,15 +9,14 @@ header:
 ---
 
 
-
-![LSS](/images/research/LSS.png)
-**Figure 0:** Filamentary structures of intergalactic gas spanning tens of Megaparsecs, produced by the [Nyx Simulation Suite](https://amrex-astro.github.io/Nyx/).
-
 # Section 0: Introduction
 
 What follows is a visual guide for anyone curious about the Large Scale Structure of the Cosmos, what we can learn by mapping it, and how we can simulate its formation on a computer.
 
 The Large Scale Structure (LSS) of the universe is a fascinating subject of study for astrophysicists and cosmologists. It refers to the distribution of galaxies and matter on a larger scale than individual galaxies or galaxy groups, with patterns extending up to billions of light years. These structures are formed and shaped by gravity, which pulls galaxies and matter together to create rich and complex patterns, resembling a cosmic web. Studying LSS provides astronomers with important insights into the formation and evolution of the universe as a whole.
+
+![LSS](/images/research/LSS.png)
+**Figure 0:** Filamentary structures of intergalactic gas spanning tens of Megaparsecs, produced by the [Nyx Simulation Suite](https://amrex-astro.github.io/Nyx/).
 
 Studying LSS allows cosmologists to measure the strength of gravity in the universe, as they can measure galaxies at different distances and times in the universe's history, revealing that gravity has been attracting more matter together over time. Furthermore, LSS provides information about dark energy, the mysterious pressure driving the expansion of the universe, which is known to slow down the process of gravity creating large structures. As the universe accelerates in its expansion, matter takes more time to come together due to the increased distance. By studying the growth of LSS over time, astronomers can gain knowledge about how the relative strengths of gravity and dark energy may themselves be changing as the universe evolves. 
 
@@ -109,17 +108,8 @@ To model the expansion of the universe, we can include some parameter, a, which 
 
 Modeling the universe using this N-Body approach reproduces the web-like filament structures that astronomers have observed. 
 
-![Evolve](/images/research/Evolution.png)
-**Figure 6:** Simulation of gravity in an expanding Universe. As time goes on (left to right) the universe itself is expanding so any given box within the universe gets bigger. In reality this effect is *much* more exaggerated. Adapted from an figure by the National Center for Supercomputer Applications (NCSA).
-
-### Initial Conditions
-
-![CMB](/images/research/CMB_PS.svg)
-**Figure 7:** Observations of the CMB provide constraints on the initial conditions of the overdensity fluctuations as modeled by a guassian random field.
-
 
 ### Visible Matter and Fluid Simulation
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4IIEJlSwuXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 **Video 2:** Evolution of cosmic structure including baryon hydrodynamics. View is 10 Mpc wide, taken from the [TNG100 simulation](https://www.tng-project.org/).
@@ -138,4 +128,12 @@ Modeling the universe using this N-Body approach reproduces the web-like filamen
 
 <p align="center"><iframe src="https://openprocessing.org/sketch/1052684/embed/?plusEmbedHash=YTE5OWVlOTRmZWUxMzk2ZjAzYjFjNzQ0NmNjOGY1YmQ2ODliYzU5N2U0NTkxMjZkZDQ2Y2U4YmYyNWExODVjOTRlODcwMDBiYWI4NGI1NGExM2MwMjFkMDdlM2FkYzBhNjI1MTk2ZGRkMDIyMzVkYjlmNjgxNWQ1OTU0ZmUzZTRiWUt4ZVo3ak9Zai9vWXl3YlJmYlljU1RPbm9nUHppYXROd2hBVCtkdWNWUjJzai9hT1kvYkorVEhNVHFvb0pYcmQvVy93d3htYkFtc0NPTGk5dmJkdz09" width="620" height="640"></iframe></p>
 **Appliction 3:** Increasing the grid's cell density improves the fluid's realism. Click and drag to induce flow.
+
+![Evolve](/images/research/Evolution.png)
+**Figure 6:** Simulation of gravity in an expanding Universe. As time goes on (left to right) the universe itself is expanding so any given box within the universe gets bigger. In reality this effect is *much* more exaggerated. Adapted from an figure by the National Center for Supercomputer Applications (NCSA).
+
+### Initial Conditions
+
+![CMB](/images/research/CMB_PS.svg)
+**Figure 7:** Observations of the CMB provide constraints on the initial conditions of the overdensity fluctuations as modeled by a guassian random field.
 
