@@ -82,19 +82,32 @@ In practice, researchers do not need to get these parameters to exactly match th
 
 # Section 3: Digital Universes
 
+To be able to derive the cosmological constraints discussed above, we need fast and accurate techniques for simulating model universes. Hydrodynamic cosmological simulations are remarkably powerful tools for studying the formation of structure in the universe but require extreme computational resources. Full-physics cosmological simulations are among the most expensive simulations run at supercomputing centers, requiring tens of millions of CPU-hours. 
+
+To get an understanding of how these simulations work, we will break down the basic components of the algorithm: gravity and fluid mechanics. 
+
 ### Dark Matter and Gravity Simulation
 
+The overwhelming majority of matter in the universe is what’s called ‘dark matter’. The influence of dark matter has been observed in many different contexts, from the orbital speeds of stars within galaxies to gravitational lensing around galaxy clusters. While Physicists may be unsure what exactly dark matter *is*Astronomers agree about its presence and influence.
+
+Extensive research has suggested that dark matter is cold and pressureless. Unlike ordinary, visible matter which often collides with itself, dark matter seems to be collision-less. The only influence dark matter has on the universe seems to be via gravity. 
  
 <p align="center"><video width="640" height="480" autoplay loop muted>
   <source src="/images/research/NBody.mp4" type="video/mp4">
 </video></p>
 **Video 1:** Simulation of self-gravitating dark matter particles forming structure. 
 
+The classic way to model dark matter is using what’s known as an N-Body simulation. This involves some number, N, of particles which can move about a region of space. These particles interact with one another via gravity, attracting towards each other with a force proportional to the inverse square of their distance.  
+
 ![Expand](/images/research/Expand.svg)
 **Figure 6:** Dark matter structure can be simulated using an N-Body simulation in an expanding spacetime. Many particles gravitationally attract eachother while the frame they inhabit is slowly stretched out.
 
+To model the expansion of the universe, we can include some parameter, a, which defines the scale at a given time. This scale factor increase with time and is used to calculate the effective distance between two points from their comoving (ie. non-expanding) distance. Effectively this means the force of gravity between points gets weaker over time as their effective distance becomes greater.
+
 <p align="center"><iframe src="https://openprocessing.org/sketch/1900476/embed/?plusEmbedHash=NGUxNzEzNTI3NDhkZTRhOTUyZmRhNzQ0ZDhlYzFmYjFmZGE4N2Y1MDc4ZTUzZTAzYmE5OGM1OTUzM2ZhODgwZDFmZDAzNTg3Nzg2NDdkZTE3YzZhOWVlYjlmYjQ5NDA4ZTQwOGIzZDliYmZkOGMwMDk3YThhYjcxNDQ1YWQwNGJXcy8zc0pkeUxVMWFvTUNkeEdYTGxnS2FUanh6STU2aFhJU3ZhZE5JSFBkN3pIYUZuNzlHY0p2WURPZUtzODlQdUsrcEFzMzNTM2VuVnpidVhJRUMxZz09" width="620" height="640"></iframe></p>
-**Appliction 1:** Self-gravitating dark matter particles in an expanding spacetime. 
+**Appliction 1:** Self-gravitating dark matter particles in an expanding spacetime. (You must hold your mouse in the center of the frame for it to animate)
+
+Modeling the universe using this N-Body approach reproduces the web-like filament structures that astronomers have observed. 
 
 ![Evolve](/images/research/Evolution.png)
 **Figure 6:** Simulation of gravity in an expanding Universe. As time goes on (left to right) the universe itself is expanding so any given box within the universe gets bigger. In reality this effect is *much* more exaggerated. Adapted from an figure by the National Center for Supercomputer Applications (NCSA).
