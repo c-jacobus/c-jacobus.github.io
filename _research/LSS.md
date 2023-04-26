@@ -70,7 +70,7 @@ Modern telescopes can probe the ancient universe with unprecedented precision an
 These maps of the cosmos can be used to study the evolution and underlying physics of our universe. The current large-scale structure of the universe is shaped by the parameters of a given cosmological model, as well as initial conditions. By comparing accurate observed galaxy/cluster maps with high-fidelity simulated model universes we can thus constrain the parameters of our cosmological model, for example: the nature of dark matter and dark energy, the history of inflation and reionization in the early universe, and the mass of neutrino particles.
 
 ![Pipeline](/images/research/LSS_Pipeline.png)
-**Figure 5:** Data analysis pipeline for obtaining constraints on cosmological parameters from observations of cosmic structure.
+**Figure 6:** Data analysis pipeline for obtaining constraints on cosmological parameters from observations of cosmic structure.
 
 These constraints are found by comparing the statistics of the observed, real universe with a large set of simulated universes. Researchers can change physical properties of the universe when running simulations to see how varying parameters like the density of matter or the strength of dark energy affect the structures that emerge. Finding the parameters of the actual universe then becomes a matter of finding which of these simulated universes is most similar to what researchers observe in reality. 
 
@@ -99,7 +99,7 @@ Extensive research has suggested that dark matter is cold and pressureless. Unli
 The classic way to model dark matter is using what’s known as an N-Body simulation. This involves some number, N, of particles which can move about a region of space. These particles interact with one another via gravity, attracting towards each other with a force proportional to the inverse square of their distance.  
 
 ![Expand](/images/research/Expand.svg)
-**Figure 6:** Dark matter structure can be simulated using an N-Body simulation in an expanding spacetime. Many particles gravitationally attract eachother while the frame they inhabit is slowly stretched out.
+**Figure 7:** Dark matter structure can be simulated using an N-Body simulation in an expanding spacetime. Many particles gravitationally attract eachother while the frame they inhabit is slowly stretched out.
 
 To model the expansion of the universe, we can include some parameter, a, which defines the scale at a given time. This scale factor increase with time and is used to calculate the effective distance between two points from their comoving (ie. non-expanding) distance. Effectively this means the force of gravity between points gets weaker over time as their effective distance becomes greater.
 
@@ -132,19 +132,16 @@ Instead, the gas can be modeled using what’s called a cellular automata. Figur
 Each grid cell has some variables associated with it representing the fluid’s average properties within it. For the purposes of these simulations, these properties are the gas density, temperature, and bulk velocity. The grid is updated iteratively to evolve the fluid forward in time. The values in a given grid grid cell at a given time are based on the values of it and its neighbors at the time just before. 
 
 ![Advect](/images/research/Advection.png)
-**Figure 8:** Fluid transport (ie. Advection) on an Eulerian Grid is done by distributing the density in given cell to the cells nearest the tip of the velocity vector extending from the start cell.
+**Figure 9:** Fluid transport (ie. Advection) on an Eulerian Grid is done by distributing the density in given cell to the cells nearest the tip of the velocity vector extending from the start cell.
 
-The velocity of the fluid describes how the fluid should be moving, so the density at a given place ought to be *transported* according to the velocity there. This is called **Advection** and in practice it involves updating the density values of the neighboring cells additively based on the direction of flow and density of a given cell, as shown in Figure ?.
+The velocity of the fluid describes how the fluid should be moving, so the density at a given place ought to be *transported* according to the velocity there. This is called **Advection** and in practice it involves updating the density values of the neighboring cells additively based on the direction of flow and density of a given cell, as shown in Figure 9.
 
 ![Diffuse](/images/research/Diffusion.png)
-**Figure 9:** Density Diffusion and Fluid Viscosity on an Eulerian Grid are modeled similarly by diffusing a each field slightly each timestep using convolution with some discrete gaussian kernel.
+**Figure 10:** Density Diffusion and Fluid Viscosity on an Eulerian Grid are modeled similarly by diffusing a each field slightly each timestep using convolution with some discrete gaussian kernel.
 
 Any good fluid also has some diffusion - if you release gas in one corner of a room, it will eventually make its way to the other side of the room via random motion even without any wind. A good fluid simulation will also include viscosity, the friction that counteracts any shear flow and tends to make the velocity point in the same direction. 
 
-These two properties can actually be modeled very similarly. Density diffusion involves updating a local neighborhood of cells each timestep so that they all converge on the average of their neighbors. But viscosity can actually be modeled by doing the exact same process for the velocity vectors so they all align as time goes on. These processes are sketched in Figure ?.
-
-
-These two properties can actually be modeled very similarly. Density diffusion involves updating a local neighborhood of cells each timestep so that they all converge on the average of their neighbors. But viscosity can actually be modeled by doing the exact same process for the velocity vectors so they all align as time goes on. These processes are sketched in Figure ?.
+These two properties can actually be modeled very similarly. Density diffusion involves updating a local neighborhood of cells each timestep so that they all converge on the average of their neighbors. But viscosity can actually be modeled by doing the exact same process for the velocity vectors so they all align as time goes on. These processes are sketched in Figure 10.
 
 Combining these three processes alone (advection, diffusion, and viscosity) allows us to make a surprisingly realistic fluid model. The interactive application below uses these principles to animate a fluid flow model. You can click and drag with your mouse to make the fluid move. 
 
@@ -159,11 +156,23 @@ In theory, we could keep shrinking the size of the cells until we had a perfect 
 <p align="center"><iframe src="https://openprocessing.org/sketch/1052684/embed/?plusEmbedHash=YTE5OWVlOTRmZWUxMzk2ZjAzYjFjNzQ0NmNjOGY1YmQ2ODliYzU5N2U0NTkxMjZkZDQ2Y2U4YmYyNWExODVjOTRlODcwMDBiYWI4NGI1NGExM2MwMjFkMDdlM2FkYzBhNjI1MTk2ZGRkMDIyMzVkYjlmNjgxNWQ1OTU0ZmUzZTRiWUt4ZVo3ak9Zai9vWXl3YlJmYlljU1RPbm9nUHppYXROd2hBVCtkdWNWUjJzai9hT1kvYkorVEhNVHFvb0pYcmQvVy93d3htYkFtc0NPTGk5dmJkdz09" width="620" height="640"></iframe></p>
 **Appliction 3:** Increasing the grid's cell density improves the fluid's realism. Click and drag to induce flow.
 
+To accurately simulate the formation of cosmic structure, we can couple these two simulation techniques together. The N-Body dark matter simulation can exert some force on the ordinary matter fluid simulation, pulling the fluid towards the dense clusters. 
+
+The fluid models above are really more like water and less like intergalactic gas. A better model of gas would take into account things like density and temperature, whereas the toy models above treat everything as equal. To improve this model we would need to model the thermodynamic properties of the gas and use them to calculate an outward pressure that would come from the hotter cluster (as visible in the video above). But this simple advection-diffusion captures most of the important aspects.
+
+
 ### Initial Conditions
 
+The final remaining question is the initial conditions of our simulation. How we initial the density in our model will have as much effect on the resulting structure as the physical parameters we are trying to measure. For instance, if we started with everything *perfectly* uniform then no structure would form at all. There needs to be some kind of initial randomness to see the growth of structure.
+
 ![Evolve](/images/research/Evolution.png)
-**Figure 6:** Simulation of gravity in an expanding Universe. As time goes on (left to right) the universe itself is expanding so any given box within the universe gets bigger. In reality this effect is *much* more exaggerated. Adapted from an figure by the National Center for Supercomputer Applications (NCSA).
+**Figure 11:** Simulation of gravity in an expanding Universe. As time goes on (left to right) the universe itself is expanding so any given box within the universe gets bigger. In reality this effect is *much* more exaggerated. Adapted from an figure by the National Center for Supercomputer Applications (NCSA).
+
+But not all randomness is created equal. Consider the plot below showing different random fields, you will notice that they vary pretty substantially in smoothness. These are known as gaussian random fields, and each of these them is consistent with the expectations we would have for our initial conditions of our universe. Using different values for this initial smoothness would result in radically different structures down the line. Beginning with a field of entirely uncorrelated noise (like the leftmost field) would lead to entirely lots of very small structures whereas using huge smooth blobs (like the rightmost) would produce massive galaxy clusters with enormous voids in between.
 
 ![CMB](/images/research/CMB_PS.svg)
-**Figure 7:** Observations of the CMB provide constraints on the initial conditions of the overdensity fluctuations as modeled by a guassian random field.
+**Figure 12:** Observations of the CMB provide constraints on the initial conditions of the overdensity fluctuations as modeled by a guassian random field.
+
+Fortunately, these initial conditions are something that astronomers can measure. Modern radio telescopes (both in space and on the ground) have mapped the cosmic microwave background (CMB) in great detail. While it is impossible to know the *exact* initial conditions that led to the *exact* structures that astronomers observe, observations of the CMB have measured the smoothness of this primordial noise to a high confidence. Researchers can use these constraints to initialize their simulations to produce the most faithful realizations of the Cosmos. 
+
 
