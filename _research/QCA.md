@@ -8,8 +8,5 @@ header:
   og_image: "research/QCA_icon.png"
 ---
 
-
-# Quantum Cellular Automata
-
 ![QCA](/images/research/QCA_Poster.png)
 
