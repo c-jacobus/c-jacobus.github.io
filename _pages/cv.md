@@ -14,4 +14,4 @@ You can download a PDF copy of my CV [here](/files/pdf/Jacobus_CV.pdf).
 
 
 
-For transparency (and your viewing pleasure), you can also download my transcripts from [High School](/files/pdf/HS_Transcript.pdf) and [Undergrad](/files/pdf/UG_Transcript.pdf)
+For transparency (and your viewing pleasure?), you can also download my transcripts from [High School](/files/pdf/HS_Transcript.pdf) and [Undergrad](/files/pdf/UG_Transcript.pdf)
