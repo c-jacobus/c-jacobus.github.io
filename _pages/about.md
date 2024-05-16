@@ -15,4 +15,4 @@ I am an undergraduate student-researcher at UC Berkeley's [Department of Astrono
 
 Basically, I am excited about problems having to do with these two (related!) questions: 'In what ways is a Universe like a Computer?' and 'In what ways is a Computer like a Brain?' For instance, a question I've been pursuing for the past few years is 'Can we construct a *Neural Algorithm* that accurately captures the physics which sculps the Cosmos?'
 
-I am honored to be financially supported by the Goldwater and NASA Astronaut Scholarships and the UC Berkeley Leadership Award. 
+I am honored to be financially supported by the Goldwater and NASA Astronaut Scholarships as well as the UC Berkeley Leadership Award. 
