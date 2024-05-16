@@ -10,3 +10,4 @@ header:
 
 ![QCA](/images/research/QCA_Poster.png)
 
+<iframe src="/files/pdf/Quantum_Cellular_Automata.pdf" width="100%" height="1000" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
