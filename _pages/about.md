@@ -19,3 +19,5 @@ Basically, I am excited about problems having to do with these two (related!) qu
 I am honored to be financially supported by the Goldwater and NASA Astronaut Scholarships as well as the UC Berkeley Leadership Award. 
 
 In my (limited) free time I enjoy hiking, traveling, and volunteering as a teacher.
+
+![Photo_Banner](/images/Photo_Banner.png)
